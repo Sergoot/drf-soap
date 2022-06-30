@@ -10,11 +10,11 @@ class MethodAPIView(views.APIView):
         return Response({'methods': methods_list})
 
     def post(self, request) -> Response:
-        method = request.POST.get('method')
-        data = request.POST.dict()
+        data = request.data
+        method = data.get('method')
         data.pop('method', None)
         response = call_method(method, data)
-        return Response({"Response": response})
+        return Response({"method": method, "response": response})
 
 
 class MethodDetailAPIView(views.APIView):
