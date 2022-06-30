@@ -4,9 +4,9 @@
 
 #### Endpoints
 
-* **GET: api/v1/methods**
-  Пример ответа сервера:
-  ` {
+* **GET: api/v1/methods**  
+Пример ответа сервера:  
+{
     "methods": [
         "createDeclaration",
         "declUnitsByClientId",
@@ -25,7 +25,7 @@
         "getVacantPlaceInfo",
         "getDataComplect"
     ]
-} `
+} 
 
 * **GET: api/v1/methods/<Название метода>** 
   Пример ответа сервера:  
