@@ -40,11 +40,11 @@
 } `
 * **POST: api/v1/methods**    
    Тело запроса:  
-* ` {  
+` {  
     "method": "listGroupSpec",  
     "ocato": "string1",  
     "kladr": "string2"  
-} 
+  } 
  `  
  Пример ответа сервера:    
  ` {  
