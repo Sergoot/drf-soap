@@ -30,16 +30,16 @@
 } `
 
 * **GET: api/v1/methods/<Название метода>**   
-* Пример ответа сервера:  
-* `{  
+   Пример ответа сервера:  
+  `{  
     "method": "listGroupSpec",  
     "parameters": {  
         "ocato": "string",  
         "kladr": "string"  
    }  
 } `
-* **POST: api/v1/methods**  
-* Тело запроса:  
+* **POST: api/v1/methods**    
+   Тело запроса:  
 * ` {  
     "method": "listGroupSpec",  
     "ocato": "string1",  
